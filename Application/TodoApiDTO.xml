@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TodoApiDTO</name>
+    </assembly>
+    <members>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.GetTodoItemsAsync">
+            <summary>
+              Gets all TodoItems
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.GetTodoItemAsync(System.Int64)">
+            <summary>
+              Gets TodoItem by id
+            </summary>
+            <param name="id">Id ToDoItem</param>
+            <returns></returns>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.UpdateTodoItemAsync(System.Int64,TodoProject.BLL.Models.TodoItemDto)">
+            <summary>
+              Updates ToDoItem
+            </summary>
+            <param name="id">Id ToDoItem</param>
+            <param name="todoItemDto">ToDoItem model for update</param>
+            <returns></returns>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.CreateTodoItemAsync(TodoProject.BLL.Models.TodoItemDto)">
+            <summary>
+              Creates TodoItem
+            </summary>
+            <param name="todoItemDto">ToDoItem model for create</param>
+            <returns></returns>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.DeleteTodoItemAsync(System.Int64)">
+            <summary>
+              Deletes ToDoItem
+            </summary>
+            <param name="id">Id ToDoItem</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>

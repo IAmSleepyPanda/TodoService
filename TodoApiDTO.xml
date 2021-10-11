@@ -1,0 +1,82 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>TodoApiDTO</name>
+    </assembly>
+    <members>
+        <member name="T:TodoApiDTO.Controllers.BaseController">
+            <summary>
+            Provides base controller
+            </summary>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.BaseController.CreateResult``1(TodoProject.BLL.Common.Models.ManagerResult{``0})">
+            <summary>
+            Creates result of manager method execution
+            </summary>
+            <typeparam name="T">Type of result</typeparam>
+            <param name="result">Result model of manager execution</param>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.BaseController.CreateEmptyResult(TodoProject.BLL.Common.Models.ManagerResult)">
+            <summary>
+            Creates result of manager method execution
+            </summary>
+            <param name="result">Result model of manager execution</param>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.GetTodoItemsAsync">
+            <summary>
+            Gets all TodoItems
+            </summary>
+            <returns>Cписок ToDoItems</returns>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.GetTodoItemAsync(System.Int64)">
+            <summary>
+            Gets TodoItem by id
+            </summary>
+            <param name="id">Id ToDoItem</param>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.UpdateTodoItemAsync(System.Int64,TodoProject.BLL.Models.TodoItemDto)">
+            <summary>
+            Updates ToDoItem 
+            </summary>
+            <param name="id">Id ToDoItem</param>
+            <param name="todoItemDto">ToDoItem model for update</param>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.CreateTodoItemAsync(TodoProject.BLL.Models.TodoItemDto)">
+            <summary>
+            Creates TodoItem
+            </summary>
+            <param name="todoItemDto">ToDoItem model for create</param>
+        </member>
+        <member name="M:TodoApiDTO.Controllers.TodoItemsController.DeleteTodoItemAsync(System.Int64)">
+            <summary>
+            Deletes ToDoItem
+            </summary>
+            <param name="id">Id ToDoItem</param>
+        </member>
+        <member name="T:TodoApiDTO.Extensions.TodoApiExtensions">
+            <summary>
+            Provides extensions for TodoApi
+            </summary>
+        </member>
+        <member name="M:TodoApiDTO.Extensions.TodoApiExtensions.AddServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Adds transient for services
+            </summary>
+            <param name="serviceCollection"></param>
+        </member>
+        <member name="M:TodoApiDTO.Extensions.TodoApiExtensions.AddSwagger(Microsoft.Extensions.DependencyInjection.IServiceCollection,TodoApiDTO.Configurations.SwaggerConfiguration)">
+            <summary>
+            Adds Swagger
+            </summary>
+            <param name="serviceCollection"></param>
+            <param name="swaggerConfiguration"></param>
+        </member>
+        <member name="M:TodoApiDTO.Extensions.TodoApiExtensions.UseSwagger(Microsoft.AspNetCore.Builder.IApplicationBuilder,TodoApiDTO.Configurations.SwaggerConfiguration)">
+            <summary>
+            Uses Swagger
+            </summary>
+            <param name="app"></param>
+            <param name="swaggerConfiguration"></param>
+        </member>
+    </members>
+</doc>
